@@ -41,4 +41,4 @@ product-wizard/
 
 ## License
 
-This project is licensed under the MIT License. See the Spec Kit submodule for its license terms.
+This project is not licensed and is not available for use. No license has been granted for this software. See the Spec Kit submodule for its license terms.
