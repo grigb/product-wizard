@@ -424,10 +424,20 @@ These slash commands are available after running `specify init`:
 ### .dev/ Directory Structure
 ```
 .dev/                       # Development-only files (excluded from production sync)
+├── discovery-docs/        # Source material for building Product Wizard
+│   ├── processes/        # Captured workflows, methodologies
+│   ├── concepts/         # Ideas, frameworks, theories
+│   ├── conversations/    # Transcripts, discussions with others
+│   ├── best-practices/   # Proven approaches, patterns
+│   ├── snapshots/        # Project snapshots, exports
+│   ├── INDEX.md          # Master catalog of all materials
+│   └── README.md         # Purpose and usage guide
+├── INBOX/                 # Temporary intake for unprocessed materials
 ├── ai/                    # ALL AI-generated documentation
 │   ├── handovers/        # Session handover documents
 │   ├── analysis/         # Reports and audits
 │   └── [subdirectories]   # As specified above
+├── prompts/               # Prompt library for AI agents
 ├── scripts/               # Utility scripts, tools, helpers
 │   └── *.py, *.sh        # check_links.py, sync scripts, etc.
 ├── temp/                 # Temporary files, work-in-progress
@@ -435,6 +445,14 @@ These slash commands are available after running `specify init`:
 ```
 
 ### Rules for Development Files
+- **Discovery materials** → `.dev/discovery-docs/[appropriate-subdirectory]/`
+  - Processes from other projects → `discovery-docs/processes/`
+  - Conceptual frameworks → `discovery-docs/concepts/`
+  - Transcripts/discussions → `discovery-docs/conversations/`
+  - Proven patterns → `discovery-docs/best-practices/`
+  - Project snapshots → `discovery-docs/snapshots/`
+  - **ALWAYS update** `discovery-docs/INDEX.md` when adding materials
+- **Unprocessed intake** → `.dev/INBOX/` (temporary holding area)
 - **Utility scripts** → `.dev/scripts/` (e.g., check_links.py)
 - **Sync/copy scripts** → `.dev/scripts/` (e.g., copy-from-knowledge-graph-lab.sh)
 - **Temporary files** → `.dev/temp/`

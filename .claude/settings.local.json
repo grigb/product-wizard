@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Read(//Users/grig/work/obsidian-vault/🕸️ PeerMesh.org/deep-research/abstraction-layer/docs/handovers/**)"
+      "Read(//Users/grig/work/obsidian-vault/🕸️ PeerMesh.org/deep-research/abstraction-layer/docs/handovers/**)",
+      "Read(//Users/grig/work/obsidian-vault/🕸️ PeerMesh.org/deep-research/abstraction-layer/docs/**)",
+      "Read(//Users/grig/.agents/**)"
     ],
     "deny": [],
     "ask": []
